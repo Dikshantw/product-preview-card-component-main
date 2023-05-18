@@ -1,0 +1,125 @@
+/*Root Variables */
+:root {
+  --primary-clr-9: hsl(158, 36%, 37%);
+  --primary-clr-1: hsl(30, 38%, 92%);
+
+  --neutral-clr-9: hsl(212, 21%, 14%);
+  --neutral-clr-5: hsl(228, 12%, 48%);
+  --neutral-clr-1: hsl(0, 0%, 100%);
+
+  --fs: 14px;
+  --fw-7: 700;
+  --fw-5: 500;
+
+  --ff-fraunces: "Fraunces", serif;
+  --ff-montserrat: "Montserrat", sans-serif;
+}
+
+/*CSS Reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/* Reset End */
+
+body {
+  font-family: var(--ff-montserrat);
+  color: var(--neutral-clr-5);
+  font-weight: var(--fw-5);
+  background-color: var(--primary-clr-1);
+  font-size: 14px;
+  display: grid;
+  place-content: center;
+  margin: 1rem;
+}
+.button {
+  background-color: var(--primary-clr-9);
+  padding: 0.75em 1.5em;
+  color: var(--neutral-clr-1);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: 0;
+  border-radius: 6px;
+  font-family: var(--fw-7);
+  cursor: pointer;
+}
+.flex_prize {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.advert {
+  display: grid;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: var(--neutral-clr-1);
+  max-width: 600px;
+}
+@media (min-width: 600px) {
+  .advert {
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.content {
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+.advert_category {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.advert_title {
+  font-size: 2rem;
+  color: var(--neutral-clr-9);
+  font-family: var(--ff-fraunces);
+}
+h1 {
+  line-height: 1.1;
+}
+.discount {
+  font-size: 2rem;
+  font-family: var(--ff-fraunces);
+  color: var(--primary-clr-9);
+}
